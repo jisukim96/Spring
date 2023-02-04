@@ -1,0 +1,13 @@
+Create Table member(
+    idx number primary key ,
+    id varchar2(100) not null unique,
+    pass varchar2(100) not null,
+    name varchar2(100) not null,
+    email varchar2(100) not null,
+    age number(3) null,
+    weight number(3) null,
+    regdate date default sysdate,
+    cnt number(5) default 0
+    );
+    
+id, pass , name , email , age , weight , regdate , cnt
